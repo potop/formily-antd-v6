@@ -207,7 +207,8 @@ const Copy = forwardRef<HTMLButtonElement, CommonProps>((props, ref) => {
   if (array.field?.pattern !== 'editable') return null
   return wrapSSR(
     <Button
-      type="ghost"
+      type="default"
+      ghost
       {...props}
       style={{
         padding: '0 0 0 6px',
@@ -254,7 +255,8 @@ const Remove = forwardRef<HTMLSpanElement, CommonProps>((props, ref) => {
   if (array.field?.pattern !== 'editable') return null
   return wrapSSR(
     <Button
-      type="ghost"
+      type="default"
+      ghost
       {...props}
       style={{
         padding: '0 0 0 6px',
@@ -296,7 +298,8 @@ const MoveDown = forwardRef<HTMLSpanElement, CommonProps>((props, ref) => {
   if (array.field?.pattern !== 'editable') return null
   return (
     <Button
-      type="ghost"
+      type="default"
+      ghost
       {...props}
       style={{
         padding: '0 0 0 6px',
@@ -337,7 +340,8 @@ const MoveUp = forwardRef<HTMLSpanElement, CommonProps>((props, ref) => {
   if (array.field?.pattern !== 'editable') return null
   return (
     <Button
-      type="ghost"
+      type="default"
+      ghost
       {...props}
       style={{
         padding: '0 0 0 6px',

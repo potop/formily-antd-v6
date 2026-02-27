@@ -77,7 +77,9 @@ export const genStyleHook = <ComponentName extends OverrideComponent>(
       useStyleRegister(
         {
           nonce: csp?.nonce,
-          theme,
+          // antd's useToken() returns Theme<SeedToken, MapToken> which clashes
+          // with @ant-design/cssinjs's Theme<any, any> on a private field.
+          theme: theme as any,
           token,
           hashId,
           path: ['formily-antd', component, prefixCls, iconPrefixCls],

@@ -31,11 +31,13 @@ const mapTimeFormat = function () {
   }
 }
 
-const InternalTimePicker: ComposedTimePicker = connect(
+// connect() return type is incompatible with ComposedTimePicker due to
+// stricter ref typing in antd v5; cast to preserve the composed interface.
+const InternalTimePicker = connect(
   AntdTimePicker,
   mapProps(mapTimeFormat()),
   mapReadPretty(PreviewText.TimePicker)
-)
+) as unknown as ComposedTimePicker
 
 const RangePicker = connect(
   AntdTimePicker.RangePicker,
