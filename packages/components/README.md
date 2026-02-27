@@ -1,9 +1,9 @@
-# @formily/antd-v5
+# @potop/antd-v6
 
 > Formily Component Adaptor
 
 ## Install
 
 ```bash
-npm install @formily/antd-v5 --save
+npm install @potop/antd-v6 --save
 ```

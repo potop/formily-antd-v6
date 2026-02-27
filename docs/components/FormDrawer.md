@@ -14,7 +14,7 @@ import {
   Submit,
   Reset,
   FormButtonGroup,
-} from '@formily/antd-v5'
+} from '@potop/antd-v6'
 import { createSchemaField } from '@formily/react'
 import { Button } from 'antd'
 
@@ -124,7 +124,7 @@ import {
   Submit,
   Reset,
   FormButtonGroup,
-} from '@formily/antd-v5'
+} from '@potop/antd-v6'
 import { createSchemaField } from '@formily/react'
 import { Button } from 'antd'
 
@@ -220,7 +220,7 @@ import {
   Submit,
   Reset,
   FormButtonGroup,
-} from '@formily/antd-v5'
+} from '@potop/antd-v6'
 import { Field } from '@formily/react'
 import { Button } from 'antd'
 

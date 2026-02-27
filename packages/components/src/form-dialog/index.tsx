@@ -206,8 +206,8 @@ export function FormDialog(title: any, id: any, renderer?: any): IFormDialog {
 
 const DialogFooter: ReactFC = (props) => {
   const ref = useRef<HTMLDivElement>(null)
-  const [footer, setFooter] = useState<HTMLDivElement>()
-  const footerRef = useRef<HTMLDivElement>()
+  const [footer, setFooter] = useState<HTMLDivElement | undefined>()
+  const footerRef = useRef<HTMLDivElement | undefined>(undefined)
   const prefixCls = usePrefixCls('modal')
   useLayoutEffect(() => {
     const content = ref.current?.closest(`.${prefixCls}-content`)

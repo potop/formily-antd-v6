@@ -1,4 +1,4 @@
-import { FormGrid } from '@formily/antd-v5'
+import { FormGrid } from '@potop/antd-v6'
 import React from 'react'
 
 const { GridColumn } = FormGrid

@@ -1,7 +1,7 @@
 import { CSSProperties } from 'react'
 import { GenerateStyle } from '../../__builtins__'
 
-export const genOtherStyle: GenerateStyle = (token) => {
+export const genOtherStyle: GenerateStyle<any, any> = (token) => {
   const {
     componentCls,
     colorError,

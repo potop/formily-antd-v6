@@ -1,5 +1,5 @@
 {
-  "name": "@formily/antd-v5-prototypes",
+  "name": "@potop/antd-v6-prototypes",
   "version": "1.2.4",
   "license": "MIT",
   "main": "lib",
@@ -36,8 +36,8 @@
     "access": "public"
   },
   "peerDependencies": {
-    "react": ">=16.8.0 || >=17.0.0",
-    "react-dom": ">=16.8.0",
-    "react-is": ">=16.8.0 || >=17.0.0"
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0",
+    "react-is": ">=18.0.0"
   }
 }

@@ -39,18 +39,19 @@ export function SortableContainer<T extends React.HTMLAttributes<HTMLElement>>(
       })
     }
 
+    const SortableCtx = SortableContext as any
     return (
       <DndContext
         accessibility={accessibility}
         onDragStart={onSortStart}
         onDragEnd={_onSortEnd}
       >
-        <SortableContext
+        <SortableCtx
           items={list.map((_, index) => index + start + 1)}
           strategy={verticalListSortingStrategy}
         >
           <Component {...(props as unknown as T)}>{props.children}</Component>
-        </SortableContext>
+        </SortableCtx>
       </DndContext>
     )
   }

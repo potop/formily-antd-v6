@@ -1,1 +1,1 @@
-import 'antd/lib/date-picker/style/index'
+// antd v6 auto-injects component styles; no manual import needed

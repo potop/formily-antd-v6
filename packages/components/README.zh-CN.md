@@ -1,9 +1,9 @@
-# @formily/antd-v5
+# @potop/antd-v6
 
 > Formily 组件库桥接层
 
 ## 安装
 
 ```bash
-npm install @formily/antd-v5 --save
+npm install @potop/antd-v6 --save
 ```

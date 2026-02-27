@@ -1,12 +1,10 @@
-# formily antd repository
-
-English | [简体中文](./README.zh-CN.md)
+# formily antd-v6 repository
 
 <p align="center">
 <img src="https://img.alicdn.com/tfs/TB1fHhZu4D1gK0jSZFyXXciOVXa-2500-1200.png">
 <img src="https://img.shields.io/npm/dt/@formily/antd-v5"/>
 <img src="https://img.shields.io/npm/dm/@formily/antd-v5"/>
-<a href="https://www.npmjs.com/package/@formily/antd-v5"><img src="https://img.shields.io/npm/v/@formily/antd-v5.svg"></a>
+<a href="https://www.npmjs.com/package/@potop/antd-v6"><img src="https://img.shields.io/npm/v/@potop/antd-v6.svg"></a>
 <a href="https://codecov.io/gh/formilyjs/antd">
   <img src="https://codecov.io/gh/formilyjs/antd/branch/master/graph/badge.svg?token=3V9RU8Wh9d"/>
 </a>
@@ -31,19 +29,19 @@ The Awesome Components Library with Formily & Ant Design.
 - 🏅 Side effects are managed independently, making form data linkages easier than ever before.
 - 🌯 Override most complicated form layout use cases.
 
-## Form Builder
+## Legacy Form Builder
 
 ![https://designable-antd.formilyjs.org/](https://img.alicdn.com/imgextra/i3/O1CN01xAJj1y1wcGzXYc1Uq_!!6000000006328-2-tps-2980-1740.png)
 
-## WebSite
+## Unbuilt WebSite
 
-<https://antd5.formilyjs.org>
+<https://antd6.formilyjs.org>
 
 ## Community
 
 - [formily](https://github.com/alibaba/formily)
 - [formilyjs](https://github.com/formilyjs)
-- [designable](https://github.com/alibaba/designable)
+- [kdesignable](https://github.com/potop/kdesignable)
 
 ## How to contribute?
 

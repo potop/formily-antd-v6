@@ -2,14 +2,14 @@ import React, { useEffect } from 'react'
 import { Field } from '@formily/core'
 import { connect, mapProps, useField } from '@formily/react'
 import { Upload as AntdUpload, Button } from 'antd'
-import {
+import type {
   UploadChangeParam,
   UploadProps as AntdUploadProps,
   DraggerProps as AntdDraggerProps,
-} from 'antd/lib/upload'
+} from 'antd/es/upload'
 import { InboxOutlined, UploadOutlined } from '@ant-design/icons'
 import { reaction } from '@formily/reactive'
-import { UploadFile } from 'antd/lib/upload/interface'
+import type { UploadFile } from 'antd/es/upload/interface'
 import { isArr, toArr } from '@formily/shared'
 import { UPLOAD_PLACEHOLDER } from './placeholder'
 import { usePrefixCls } from '../__builtins__'

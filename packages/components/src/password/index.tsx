@@ -1,6 +1,6 @@
 import { connect, mapReadPretty } from '@formily/react'
 import { Input } from 'antd'
-import { PasswordProps } from 'antd/lib/input'
+import type { PasswordProps } from 'antd/es/input'
 import React from 'react'
 import { PreviewText } from '../preview-text'
 import { PasswordStrength } from './PasswordStrength'

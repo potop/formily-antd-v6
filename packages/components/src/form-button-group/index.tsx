@@ -6,7 +6,7 @@
  */
 import { ReactFC } from '@formily/react'
 import { Space } from 'antd'
-import { SpaceProps } from 'antd/lib/space'
+import type { SpaceProps } from 'antd/es/space'
 import cls from 'classnames'
 import React, { useLayoutEffect, useRef, useState } from 'react'
 import StickyBox from 'react-sticky-box'

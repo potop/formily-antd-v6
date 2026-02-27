@@ -11,7 +11,7 @@ import {
   Submit,
   Reset,
   FormButtonGroup,
-} from '@formily/antd-v5'
+} from '@potop/antd-v6'
 
 const useCollapseGrid = (maxRows: number) => {
   const grid = useMemo(

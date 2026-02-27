@@ -24,7 +24,6 @@ import React, {
   createContext,
   forwardRef,
   Fragment,
-  useCallback,
   useContext,
   useEffect,
   useRef,
@@ -261,7 +260,7 @@ const ArrayTablePagination: ReactFC<IArrayTablePaginationProps> = (props) => {
   const prefixCls = usePrefixCls('formily-array-table')
   const [wrapSSR, hashId] = useStyle(prefixCls)
   const [pageSize, setPageSize] = useState(props.pageSize || 10)
-  const size = props.size || 'default'
+  const size = props.size
   const dataSource = props.dataSource || []
   const showPagination = props.showPagination
   const startIndex = (current - 1) * pageSize

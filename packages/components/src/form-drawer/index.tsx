@@ -174,8 +174,8 @@ export function FormDrawer(title: any, id: any, renderer?: any): IFormDrawer {
 
 const DrawerExtra: ReactFC = (props) => {
   const ref = useRef<HTMLDivElement>(null)
-  const [extra, setExtra] = useState<HTMLDivElement>()
-  const extraRef = useRef<HTMLDivElement>()
+  const [extra, setExtra] = useState<HTMLDivElement | undefined>()
+  const extraRef = useRef<HTMLDivElement | undefined>(undefined)
   const prefixCls = usePrefixCls('drawer')
   useLayoutEffect(() => {
     const content = ref.current
@@ -207,8 +207,8 @@ const DrawerExtra: ReactFC = (props) => {
 
 const DrawerFooter: ReactFC = (props) => {
   const ref = useRef<HTMLDivElement>(null)
-  const [footer, setFooter] = useState<HTMLDivElement>()
-  const footerRef = useRef<HTMLDivElement>()
+  const [footer, setFooter] = useState<HTMLDivElement | undefined>()
+  const footerRef = useRef<HTMLDivElement | undefined>(undefined)
   const prefixCls = usePrefixCls('drawer')
   useLayoutEffect(() => {
     const content = ref.current?.closest(`.${prefixCls}-content`)

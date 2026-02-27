@@ -2,7 +2,7 @@ import { CloseOutlined, EditOutlined, MessageOutlined } from '@ant-design/icons'
 import { Field, isVoidField } from '@formily/core'
 import { observer, ReactFC, useField } from '@formily/react'
 import { Popover as AntdPopover } from 'antd'
-import { PopoverProps } from 'antd/lib/popover'
+import type { PopoverProps } from 'antd/es/popover'
 import cls from 'classnames'
 import React, { useLayoutEffect, useRef, useState } from 'react'
 import { BaseItem, IFormItemProps } from '../form-item'
@@ -57,7 +57,7 @@ const InternalEditable: ReactFC<IFormItemProps> = observer((props) => {
   const basePrefixCls = usePrefixCls()
   const prefixCls = usePrefixCls('formily-editable')
   const [wrapSSR, hashId] = useStyle(prefixCls)
-  const ref = useRef<boolean>()
+  const ref = useRef<boolean>(undefined)
   const innerRef = useRef<HTMLDivElement>(null)
   const recover = () => {
     if (ref.current && !field?.errors?.length) {

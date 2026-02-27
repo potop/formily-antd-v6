@@ -244,134 +244,140 @@ const Copy = forwardRef<HTMLButtonElement, CommonProps>((props, ref) => {
   )
 })
 
-const Remove = forwardRef<HTMLSpanElement, CommonProps>((props, ref) => {
-  const index = useIndex(props.index)
-  const self = useField()
-  const array = useArray()
-  const prefixCls = usePrefixCls('formily-array-base')
-  const [wrapSSR, hashId] = useStyle(prefixCls)
+const Remove = forwardRef<HTMLButtonElement | HTMLAnchorElement, CommonProps>(
+  (props, ref) => {
+    const index = useIndex(props.index)
+    const self = useField()
+    const array = useArray()
+    const prefixCls = usePrefixCls('formily-array-base')
+    const [wrapSSR, hashId] = useStyle(prefixCls)
 
-  if (!array) return null
-  if (array.field?.pattern !== 'editable') return null
-  return wrapSSR(
-    <Button
-      type="default"
-      ghost
-      {...props}
-      style={{
-        padding: '0 0 0 6px',
-        width: 'auto',
-        height: 'auto',
-        ...props.style,
-      }}
-      disabled={self?.disabled}
-      className={cls(
-        `${prefixCls}-remove`,
-        hashId,
-        self?.disabled ? `${prefixCls}-remove-disabled` : '',
-        props.className
-      )}
-      ref={ref}
-      onClick={(e) => {
-        if (self?.disabled) return
-        e.stopPropagation()
-        if (props.onClick) {
-          props.onClick(e)
-          if (e.defaultPrevented) return
-        }
-        array.field?.remove?.(index)
-        array.props?.onRemove?.(index)
-      }}
-      icon={isUndef(props.icon) ? <DeleteOutlined /> : props.icon}
-    >
-      {props.title || self.title}
-    </Button>
-  )
-})
+    if (!array) return null
+    if (array.field?.pattern !== 'editable') return null
+    return wrapSSR(
+      <Button
+        type="default"
+        ghost
+        {...props}
+        style={{
+          padding: '0 0 0 6px',
+          width: 'auto',
+          height: 'auto',
+          ...props.style,
+        }}
+        disabled={self?.disabled}
+        className={cls(
+          `${prefixCls}-remove`,
+          hashId,
+          self?.disabled ? `${prefixCls}-remove-disabled` : '',
+          props.className
+        )}
+        ref={ref}
+        onClick={(e) => {
+          if (self?.disabled) return
+          e.stopPropagation()
+          if (props.onClick) {
+            props.onClick(e)
+            if (e.defaultPrevented) return
+          }
+          array.field?.remove?.(index)
+          array.props?.onRemove?.(index)
+        }}
+        icon={isUndef(props.icon) ? <DeleteOutlined /> : props.icon}
+      >
+        {props.title || self.title}
+      </Button>
+    )
+  }
+)
 
-const MoveDown = forwardRef<HTMLSpanElement, CommonProps>((props, ref) => {
-  const index = useIndex(props.index)
-  const self = useField()
-  const array = useArray()
-  const prefixCls = usePrefixCls('formily-array-base')
-  if (!array) return null
-  if (array.field?.pattern !== 'editable') return null
-  return (
-    <Button
-      type="default"
-      ghost
-      {...props}
-      style={{
-        padding: '0 0 0 6px',
-        width: 'auto',
-        height: 'auto',
-        ...props.style,
-      }}
-      disabled={self?.disabled}
-      className={cls(
-        `${prefixCls}-move-down`,
-        self?.disabled ? `${prefixCls}-move-down-disabled` : '',
-        props.className
-      )}
-      ref={ref}
-      onClick={(e) => {
-        if (self?.disabled) return
-        e.stopPropagation()
-        if (props.onClick) {
-          props.onClick(e)
-          if (e.defaultPrevented) return
-        }
-        array.field?.moveDown?.(index)
-        array.props?.onMoveDown?.(index)
-      }}
-      icon={isUndef(props.icon) ? <DownOutlined /> : props.icon}
-    >
-      {props.title || self.title}
-    </Button>
-  )
-})
+const MoveDown = forwardRef<HTMLButtonElement | HTMLAnchorElement, CommonProps>(
+  (props, ref) => {
+    const index = useIndex(props.index)
+    const self = useField()
+    const array = useArray()
+    const prefixCls = usePrefixCls('formily-array-base')
+    if (!array) return null
+    if (array.field?.pattern !== 'editable') return null
+    return (
+      <Button
+        type="default"
+        ghost
+        {...props}
+        style={{
+          padding: '0 0 0 6px',
+          width: 'auto',
+          height: 'auto',
+          ...props.style,
+        }}
+        disabled={self?.disabled}
+        className={cls(
+          `${prefixCls}-move-down`,
+          self?.disabled ? `${prefixCls}-move-down-disabled` : '',
+          props.className
+        )}
+        ref={ref}
+        onClick={(e) => {
+          if (self?.disabled) return
+          e.stopPropagation()
+          if (props.onClick) {
+            props.onClick(e)
+            if (e.defaultPrevented) return
+          }
+          array.field?.moveDown?.(index)
+          array.props?.onMoveDown?.(index)
+        }}
+        icon={isUndef(props.icon) ? <DownOutlined /> : props.icon}
+      >
+        {props.title || self.title}
+      </Button>
+    )
+  }
+)
 
-const MoveUp = forwardRef<HTMLSpanElement, CommonProps>((props, ref) => {
-  const index = useIndex(props.index)
-  const self = useField()
-  const array = useArray()
-  const prefixCls = usePrefixCls('formily-array-base')
-  if (!array) return null
-  if (array.field?.pattern !== 'editable') return null
-  return (
-    <Button
-      type="default"
-      ghost
-      {...props}
-      style={{
-        padding: '0 0 0 6px',
-        width: 'auto',
-        height: 'auto',
-        ...props.style,
-      }}
-      disabled={self?.disabled}
-      className={cls(
-        `${prefixCls}-move-up`,
-        self?.disabled ? `${prefixCls}-move-up-disabled` : '',
-        props.className
-      )}
-      ref={ref}
-      onClick={(e) => {
-        if (self?.disabled) return
-        e.stopPropagation()
-        if (props.onClick) {
-          props.onClick(e)
-          if (e.defaultPrevented) return
-        }
-        array?.field?.moveUp(index)
-        array?.props?.onMoveUp?.(index)
-      }}
-      icon={isUndef(props.icon) ? <UpOutlined /> : props.icon}
-    >
-      {props.title || self.title}
-    </Button>
-  )
-})
+const MoveUp = forwardRef<HTMLButtonElement | HTMLAnchorElement, CommonProps>(
+  (props, ref) => {
+    const index = useIndex(props.index)
+    const self = useField()
+    const array = useArray()
+    const prefixCls = usePrefixCls('formily-array-base')
+    if (!array) return null
+    if (array.field?.pattern !== 'editable') return null
+    return (
+      <Button
+        type="default"
+        ghost
+        {...props}
+        style={{
+          padding: '0 0 0 6px',
+          width: 'auto',
+          height: 'auto',
+          ...props.style,
+        }}
+        disabled={self?.disabled}
+        className={cls(
+          `${prefixCls}-move-up`,
+          self?.disabled ? `${prefixCls}-move-up-disabled` : '',
+          props.className
+        )}
+        ref={ref}
+        onClick={(e) => {
+          if (self?.disabled) return
+          e.stopPropagation()
+          if (props.onClick) {
+            props.onClick(e)
+            if (e.defaultPrevented) return
+          }
+          array?.field?.moveUp(index)
+          array?.props?.onMoveUp?.(index)
+        }}
+        icon={isUndef(props.icon) ? <UpOutlined /> : props.icon}
+      >
+        {props.title || self.title}
+      </Button>
+    )
+  }
+)
 
 function mixin<T extends object = object>(target: T): T & ArrayBaseMixins {
   return Object.assign(target, {

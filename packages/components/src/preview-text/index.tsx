@@ -12,8 +12,8 @@ import type {
   TreeSelectProps,
 } from 'antd'
 import { Space, Tag } from 'antd'
-import type { DefaultOptionType } from 'antd/lib/cascader'
-import type { RangePickerProps as DateRangePickerProps } from 'antd/lib/date-picker'
+import type { DefaultOptionType } from 'antd/es/cascader'
+import type { RangePickerProps as DateRangePickerProps } from 'antd/es/date-picker'
 import cls from 'classnames'
 import React, { createContext, useContext } from 'react'
 import { formatDayjsValue, usePrefixCls } from '../__builtins__'
