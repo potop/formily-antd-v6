@@ -57,5 +57,6 @@
     "@formily/shared": "^2.3.7",
     "classnames": "^2.2.6",
     "react-sticky-box": "^2.0.5"
-  }
+  },
+  "gitHead": "c4f2172045f094220a0a73d4a7c0b9da59ba4748"
 }
