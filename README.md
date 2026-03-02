@@ -50,7 +50,7 @@ The Awesome Components Library with Formily & Ant Design.
 ## Contributors
 
 This project exists thanks to all the people who contribute.
-<a href="https://github.com/formilyjs/antd/graphs/contributors"><img src="https://contrib.rocks/image?repo=formilyjs/antd" /></a>
+<a href="https://github.com/potop/formily-antd-v6/graphs/contributors"><img src="https://contrib.rocks/image?repo=formilyjs/antd" /></a>
 
 ## LICENSE
 

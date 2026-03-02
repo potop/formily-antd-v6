@@ -3,7 +3,7 @@
   "private": true,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/formilyjs/antd.git"
+    "url": "git+https://github.com/potop/formily-antd-v6.git"
   },
   "workspaces": [
     "packages/*"

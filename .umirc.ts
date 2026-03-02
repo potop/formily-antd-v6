@@ -22,7 +22,7 @@ export default {
       },
       {
         title: 'GITHUB',
-        path: 'https://github.com/formilyjs/antd',
+        path: 'https://github.com/potop/formily-antd-v6',
       },
     ],
     'en-US': [

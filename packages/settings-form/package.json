@@ -26,12 +26,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/formilyjs/antd.git"
+    "url": "git+https://github.com/potop/formily-antd-v6.git"
   },
   "bugs": {
-    "url": "https://github.com/formilyjs/antd/issues"
+    "url": "https://github.com/potop/formily-antd-v6/issues"
   },
-  "homepage": "https://github.com/formilyjs/antd#readme",
+  "homepage": "https://github.com/potop/formily-antd-v6#readme",
   "publishConfig": {
     "access": "public"
   },
