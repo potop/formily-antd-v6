@@ -20,14 +20,14 @@ export interface ISortableContainerProps {
 export function SortableContainer<T extends React.HTMLAttributes<HTMLElement>>(
   Component: ReactFC<T>
 ): ReactFC<ISortableContainerProps & T> {
-  return ({
+  function SortableContainerInner({
     list,
     start = 0,
     accessibility,
     onSortStart,
     onSortEnd,
     ...props
-  }) => {
+  }: ISortableContainerProps & T) {
     const _onSortEnd = (event: DragEndEvent) => {
       const { active, over } = event
       if (!over) return
@@ -55,6 +55,8 @@ export function SortableContainer<T extends React.HTMLAttributes<HTMLElement>>(
       </DndContext>
     )
   }
+  SortableContainerInner.displayName = 'SortableContainer'
+  return SortableContainerInner
 }
 
 export const useSortableItem = () => {
@@ -73,7 +75,11 @@ export interface ISortableElementProps {
 export function SortableElement<T extends React.HTMLAttributes<HTMLElement>>(
   Component: ReactFC<T>
 ): ReactFC<T & ISortableElementProps> {
-  return ({ index = 0, lockAxis, ...props }) => {
+  function SortableElementInner({
+    index = 0,
+    lockAxis,
+    ...props
+  }: T & ISortableElementProps) {
     const sortable = useSortable({
       id: index + 1,
     })
@@ -128,21 +134,28 @@ export function SortableElement<T extends React.HTMLAttributes<HTMLElement>>(
 
     return (
       <SortableItemContext.Provider value={sortable}>
-        {React.createElement(Component as any, {
-          ...props,
-          style,
-          ref: setNodeRef,
-        } as unknown as T)}
+        {React.createElement(
+          Component as any,
+          {
+            ...props,
+            style,
+            ref: setNodeRef,
+          } as unknown as T
+        )}
       </SortableItemContext.Provider>
     )
   }
+  SortableElementInner.displayName = 'SortableElement'
+  return SortableElementInner
 }
 
 export function SortableHandle<T extends React.HTMLAttributes<HTMLElement>>(
   Component: ReactFC<T>
 ): ReactFC<T> {
-  return (props: T) => {
+  function SortableHandleInner(props: T) {
     const { attributes, listeners } = useSortableItem()
     return <Component {...props} {...attributes} {...listeners} />
   }
+  SortableHandleInner.displayName = 'SortableHandle'
+  return SortableHandleInner
 }
