@@ -1,4 +1,4 @@
-import { useRef, useEffect, MutableRefObject } from 'react'
+import { useRef, useEffect, RefObject } from 'react'
 
 const defaultEvent = 'click'
 
@@ -8,7 +8,7 @@ type BasicTarget<T = HTMLElement> =
   | (() => T | null)
   | T
   | null
-  | MutableRefObject<T | null | undefined>
+  | RefObject<T | null | undefined>
 
 type TargetElement = HTMLElement | Element | Document | Window
 

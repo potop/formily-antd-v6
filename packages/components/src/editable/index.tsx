@@ -155,7 +155,7 @@ const Popover = observer((props: PopoverProps) => {
       className={cls(prefixCls, hashId, props.className)}
       content={props.children}
       trigger="click"
-      destroyTooltipOnHide
+      destroyOnHidden
       onOpenChange={(open) => {
         if (open) {
           openPopover()

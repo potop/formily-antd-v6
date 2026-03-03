@@ -17,6 +17,7 @@ import useStyle from './style'
 let borderedWarned = false
 
 function mapCardProps(props: CardProps): CardProps {
+  // eslint-disable-next-line @typescript-eslint/no-deprecated -- intentional compat: map bordered to variant
   const { bordered, variant, ...rest } = props as CardProps & {
     bordered?: boolean
   }
@@ -92,8 +93,7 @@ export const InternalArrayCards: ReactFC<CardProps> = observer((props) => {
               schema={items}
               name={index}
               filterProperties={(schema) => {
-                if (!isIndexComponent(schema)) return false
-                return true
+                return isIndexComponent(schema)
               }}
               onlyRenderProperties
             />
@@ -108,8 +108,7 @@ export const InternalArrayCards: ReactFC<CardProps> = observer((props) => {
               schema={items}
               name={index}
               filterProperties={(schema) => {
-                if (!isOperationComponent(schema)) return false
-                return true
+                return isOperationComponent(schema)
               }}
               onlyRenderProperties
             />
@@ -123,8 +122,7 @@ export const InternalArrayCards: ReactFC<CardProps> = observer((props) => {
           name={index}
           filterProperties={(schema) => {
             if (isIndexComponent(schema)) return false
-            if (isOperationComponent(schema)) return false
-            return true
+            return !isOperationComponent(schema)
           }}
         />
       ) : null

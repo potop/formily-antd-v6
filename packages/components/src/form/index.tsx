@@ -37,7 +37,7 @@ export const Form: React.FC<React.PropsWithChildren<FormProps>> = ({
           {React.createElement(
             component as string,
             {
-              onSubmit(e: React.FormEvent) {
+              onSubmit(e: React.SyntheticEvent) {
                 e?.stopPropagation?.()
                 e?.preventDefault?.()
                 form.submit(onAutoSubmit).catch(onAutoSubmitFailed)

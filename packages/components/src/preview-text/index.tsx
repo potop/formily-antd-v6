@@ -37,10 +37,12 @@ const Input: React.FC<React.PropsWithChildren<InputProps>> = observer(
         className={cls(prefixCls, hashId, props.className)}
         style={props.style}
       >
+        {/* eslint-disable-next-line @typescript-eslint/no-deprecated -- reading consumer-provided prop for preview display */}
         {props.addonBefore}
         {props.prefix}
         {usePlaceholder(props.value)}
         {props.suffix}
+        {/* eslint-disable-next-line @typescript-eslint/no-deprecated -- reading consumer-provided prop for preview display */}
         {props.addonAfter}
       </Space>
     )
@@ -56,6 +58,7 @@ const NumberPicker: React.FC<React.PropsWithChildren<InputNumberProps>> =
         className={cls(prefixCls, hashId, props.className)}
         style={props.style}
       >
+        {/* eslint-disable-next-line @typescript-eslint/no-deprecated -- reading consumer-provided prop for preview display */}
         {props.addonBefore}
         {props.prefix}
         {usePlaceholder(
@@ -67,6 +70,7 @@ const NumberPicker: React.FC<React.PropsWithChildren<InputNumberProps>> =
             : props.value
         )}
         {props['suffix']}
+        {/* eslint-disable-next-line @typescript-eslint/no-deprecated -- reading consumer-provided prop for preview display */}
         {props.addonAfter}
       </Space>
     )

@@ -72,7 +72,7 @@ const SortableRow = SortableElement((props) => <tr {...props} />)
 
 const SortableBodyRaw = SortableContainer<
   React.HTMLAttributes<HTMLTableSectionElement> & {
-    tbodyRef: React.LegacyRef<HTMLTableSectionElement>
+    tbodyRef: React.Ref<HTMLTableSectionElement>
   }
 >(({ tbodyRef, ...props }) => <tbody {...props} ref={tbodyRef} />)
 const SortableBody = forwardRef<

@@ -15,11 +15,11 @@ export const Select: ReactFC<SelectProps<any, any>> = connect(
     (props, field) => {
       return {
         ...props,
-        suffixIcon:
+        suffix:
           field?.['loading'] || field?.['validating'] ? (
             <LoadingOutlined />
           ) : (
-            props.suffixIcon
+            props.suffix
           ),
       }
     }

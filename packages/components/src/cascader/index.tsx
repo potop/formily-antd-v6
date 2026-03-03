@@ -13,11 +13,11 @@ export const Cascader = connect(
     (props, field) => {
       return {
         ...props,
-        suffixIcon:
+        suffix:
           field?.['loading'] || field?.['validating'] ? (
             <LoadingOutlined />
           ) : (
-            props.suffixIcon
+            props.suffix
           ),
       }
     }

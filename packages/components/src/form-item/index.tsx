@@ -94,7 +94,7 @@ export const BaseItem: React.FC<React.PropsWithChildren<IFormItemProps>> = ({
     feedbackLayout === 'popover' ? (
       <Popover
         autoAdjustOverflow
-        overlayClassName={`${prefixCls}-popover`}
+        classNames={{ root: `${prefixCls}-popover` }}
         placement="top"
         content={
           <div
@@ -208,7 +208,7 @@ export const BaseItem: React.FC<React.PropsWithChildren<IFormItemProps>> = ({
           [`${prefixCls}-label-wrap`]: !!labelWrap,
           [`${prefixCls}-control-wrap`]: !!wrapperWrap,
           [`${prefixCls}-bordered-none`]:
-            bordered === false || !!inset || !!feedbackIcon,
+            !bordered || !!inset || !!feedbackIcon,
         },
         hashId
       )}
@@ -313,10 +313,7 @@ export const FormItem: ComposeFormItem = Object.assign(
         if ('asterisk' in props) {
           return props.asterisk
         }
-        if (field.required && field.pattern !== 'readPretty') {
-          return true
-        }
-        return false
+        return field.required && field.pattern !== 'readPretty'
       }
       return {
         label: props.label || field.title,
