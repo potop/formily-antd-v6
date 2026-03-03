@@ -10,10 +10,10 @@
   ],
   "scripts": {
     "build": "formily-tpl build",
-    "build:docs": "dumi build",
+    "build:docs": "NODE_OPTIONS=--openssl-legacy-provider dumi build",
     "lint": "eslint .",
     "release": "lerna publish from-package --yes",
-    "start": "dumi dev",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider dumi dev",
     "test": "jest --coverage",
     "test:prod": "jest --coverage --silent",
     "preversion": "yarn install --ignore-engines && npm run build && npm run lint",
