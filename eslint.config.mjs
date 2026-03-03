@@ -122,6 +122,7 @@ export default tseslint.config(
       'public/**',
       'package/**',
       '.umirc.ts',
+      '.umi/**',
     ],
   }
 )
