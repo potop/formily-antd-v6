@@ -1,4 +1,4 @@
-import { Cascader, FormButtonGroup, FormItem, Submit } from '@potop/antd-v6'
+import { Cascader, FormButtonGroup, FormItem, Submit } from '@potop/formily-antd-v6'
 import {
   createForm,
   Field as FieldType,

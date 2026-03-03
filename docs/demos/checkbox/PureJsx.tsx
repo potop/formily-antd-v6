@@ -1,4 +1,4 @@
-import { Checkbox, FormButtonGroup, FormItem, Submit } from '@potop/antd-v6'
+import { Checkbox, FormButtonGroup, FormItem, Submit } from '@potop/formily-antd-v6'
 import {
   createForm,
   Field as FieldType,

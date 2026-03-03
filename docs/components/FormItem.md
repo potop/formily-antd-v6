@@ -12,7 +12,7 @@ import {
   FormItem,
   FormButtonGroup,
   Submit,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 
@@ -48,7 +48,7 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { Input, FormItem, FormButtonGroup, Submit } from '@potop/antd-v6'
+import { Input, FormItem, FormButtonGroup, Submit } from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 
@@ -92,7 +92,7 @@ export default () => (
 
 ```tsx
 import React from 'react'
-import { Input, FormItem, FormButtonGroup, Submit } from '@potop/antd-v6'
+import { Input, FormItem, FormButtonGroup, Submit } from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, Field } from '@formily/react'
 
@@ -135,7 +135,7 @@ import {
   FormItem,
   NumberPicker,
   Switch,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 
@@ -396,7 +396,7 @@ import {
   FormItem,
   NumberPicker,
   Switch,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 
@@ -525,7 +525,7 @@ import {
   FormItem,
   NumberPicker,
   Switch,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 
@@ -656,7 +656,7 @@ import {
   FormLayout,
   NumberPicker,
   Switch,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 import { CheckCircleFilled, LoadingOutlined } from '@ant-design/icons'
@@ -918,7 +918,7 @@ import {
   FormItem,
   NumberPicker,
   Switch,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm, onFieldChange } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 

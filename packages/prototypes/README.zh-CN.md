@@ -1,9 +1,9 @@
-# @potop/antd-v6-prototypes
+# @potop/formily-antd-v6-prototypes
 
 > Formily Designable 画布组件库
 
 ## 安装
 
 ```bash
-npm install @potop/antd-v6-prototypes --save
+npm install @potop/formily-antd-v6-prototypes --save
 ```

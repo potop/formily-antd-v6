@@ -1,5 +1,5 @@
 import React from 'react'
-import { NumberPicker, FormItem, FormButtonGroup, Submit } from '@potop/antd-v6'
+import { NumberPicker, FormItem, FormButtonGroup, Submit } from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, Field } from '@formily/react'
 

@@ -2,7 +2,7 @@
 
 ## 介绍
 
-@potop/antd-v6 是基于 Ant Design V5 封装的针对表单场景专业级(Professional)组件库，它主要有以下几个特点：
+@potop/formily-antd-v6 是基于 Ant Design V5 封装的针对表单场景专业级(Professional)组件库，它主要有以下几个特点：
 
 - 仅支持 Formily2.x
   - 大部分组件无法向后兼容
@@ -61,7 +61,7 @@
 
 ```bash
 npm install --save antd dayjs
-npm install --save @formily/core @formily/react @potop/antd-v6
+npm install --save @formily/core @formily/react @potop/formily-antd-v6
 
 ```
 

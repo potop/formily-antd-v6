@@ -1,9 +1,9 @@
-# @potop/antd-v6-setters
+# @potop/formily-antd-v6-setters
 
 > Formily Designable Component Adaptor
 
 ## Install
 
 ```bash
-npm install @potop/antd-v6-setters --save
+npm install @potop/formily-antd-v6-setters --save
 ```

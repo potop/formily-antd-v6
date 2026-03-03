@@ -1,4 +1,4 @@
-import { FormButtonGroup, FormItem, Select, Submit } from '@potop/antd-v6'
+import { FormButtonGroup, FormItem, Select, Submit } from '@potop/formily-antd-v6'
 import {
   createForm,
   Field,

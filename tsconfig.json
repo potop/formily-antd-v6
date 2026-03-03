@@ -17,7 +17,7 @@
     "strictNullChecks": true,
     "baseUrl": ".",
     "paths": {
-      "@potop/antd-v6": ["packages/components/src"]
+      "@potop/formily-antd-v6": ["packages/components/src"]
     },
     "lib": ["ESNext", "DOM"]
   }

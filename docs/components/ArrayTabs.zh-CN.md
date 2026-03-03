@@ -14,7 +14,7 @@ import {
   ArrayTabs,
   FormButtonGroup,
   Submit,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 
@@ -88,7 +88,7 @@ import {
   ArrayTabs,
   FormButtonGroup,
   Submit,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 

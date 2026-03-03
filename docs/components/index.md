@@ -2,7 +2,7 @@
 
 ## Introduction
 
-@potop/antd-v6 is a professional component library for form scenarios based on Ant Design V5 encapsulation. It has the following characteristics:
+@potop/formily-antd-v6 is a professional component library for form scenarios based on Ant Design V5 encapsulation. It has the following characteristics:
 
 - Only Formily 2.x is supported
   - Most components are not backward compatible
@@ -61,7 +61,7 @@
 
 ```bash
 npm install --save antd dayjs
-npm install --save @formily/core @formily/react @potop/antd-v6
+npm install --save @formily/core @formily/react @potop/formily-antd-v6
 
 ```
 

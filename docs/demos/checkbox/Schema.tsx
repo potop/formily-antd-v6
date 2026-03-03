@@ -1,5 +1,5 @@
 import React from 'react'
-import { Checkbox, FormItem, FormButtonGroup, Submit } from '@potop/antd-v6'
+import { Checkbox, FormItem, FormButtonGroup, Submit } from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 import type { CheckboxChangeEvent } from 'antd/es/checkbox'

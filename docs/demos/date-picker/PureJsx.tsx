@@ -1,4 +1,4 @@
-import { DatePicker, FormButtonGroup, FormItem, Submit } from '@potop/antd-v6'
+import { DatePicker, FormButtonGroup, FormItem, Submit } from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { Field, FormProvider } from '@formily/react'
 import React from 'react'

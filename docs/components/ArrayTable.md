@@ -15,7 +15,7 @@ import {
   Editable,
   FormButtonGroup,
   Submit,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 import { Button, Alert } from 'antd'
@@ -159,7 +159,7 @@ import {
   Editable,
   FormButtonGroup,
   Submit,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 
@@ -312,7 +312,7 @@ import {
   Switch,
   FormButtonGroup,
   Submit,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm, onFieldChange, onFieldReact } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 import { Button } from 'antd'
@@ -469,7 +469,7 @@ import {
   Switch,
   FormButtonGroup,
   Submit,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 

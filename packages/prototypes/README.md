@@ -1,9 +1,9 @@
-# @potop/antd-v6-prototypes
+# @potop/formily-antd-v6-prototypes
 
 > Formily Designable Component Adaptor
 
 ## Install
 
 ```bash
-npm install @potop/antd-v6-prototypes --save
+npm install @potop/formily-antd-v6-prototypes --save
 ```

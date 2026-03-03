@@ -7,7 +7,7 @@ import {
   FormGrid,
   FormButtonGroup,
   Submit,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { Field } from '@formily/react'
 

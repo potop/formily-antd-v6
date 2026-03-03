@@ -15,7 +15,7 @@ import {
   Input,
   FormButtonGroup,
   Submit,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 import { Button } from 'antd'
@@ -120,7 +120,7 @@ import {
   Input,
   FormButtonGroup,
   Submit,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm } from '@formily/core'
 import { FormProvider, createSchemaField } from '@formily/react'
 import { Button } from 'antd'

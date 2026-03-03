@@ -5,7 +5,7 @@ import {
   FormItem,
   Input,
   Submit,
-} from '@potop/antd-v6'
+} from '@potop/formily-antd-v6'
 import { createForm, ObjectField } from '@formily/core'
 import { createSchemaField, FormProvider } from '@formily/react'
 import React from 'react'

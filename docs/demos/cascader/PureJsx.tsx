@@ -1,5 +1,5 @@
 import React from 'react'
-import { Cascader, FormItem, FormButtonGroup, Submit } from '@potop/antd-v6'
+import { Cascader, FormItem, FormButtonGroup, Submit } from '@potop/formily-antd-v6'
 import {
   createForm,
   onFieldReact,
