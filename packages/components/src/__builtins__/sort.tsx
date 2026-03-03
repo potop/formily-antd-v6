@@ -128,7 +128,7 @@ export function SortableElement<T extends React.HTMLAttributes<HTMLElement>>(
 
     return (
       <SortableItemContext.Provider value={sortable}>
-        {Component({
+        {React.createElement(Component as any, {
           ...props,
           style,
           ref: setNodeRef,

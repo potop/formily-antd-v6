@@ -42,14 +42,20 @@ const calcBreakpointIndex: ICalcBreakpointIndex = (breakpoints, width) => {
 const calcFactor = <T>(value: T | T[], breakpointIndex?: number): T => {
   if (Array.isArray(value)) {
     if (breakpointIndex === -1) return value[0]
-    return value[breakpointIndex || value.length - 1] ?? value[value.length - 1]
+    const index = breakpointIndex ?? value.length - 1
+    return value[index] ?? value[value.length - 1]
   } else {
     return value
   }
 }
 
-const factor = <T>(value: T | T[], breakpointIndex?: number): T =>
-  isValid(value) ? calcFactor(value as any, breakpointIndex) : value
+const factor = <T>(
+  value: T | T[] | undefined,
+  breakpointIndex?: number
+): T | undefined =>
+  isValid(value)
+    ? calcFactor(value as T | T[], breakpointIndex)
+    : (undefined as T | undefined)
 
 const calculateProps: ICalculateProps = (target, props) => {
   const { clientWidth } = target
