@@ -1,6 +1,6 @@
 {
   "name": "@potop/formily-antd-v6-settings-form",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "main": "lib",
   "types": "lib/index.d.ts",
